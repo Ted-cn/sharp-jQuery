@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="checkbox" name="check" value="1" checked/>
+<input type="checkbox" name="check" value="2"/>
+<input type="checkbox" name="check" value="3" checked/>
+<input type="submit" id="btn" value="你选中的个数"/>
+</body>
+<script type="text/javascript" src="../../../resource/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    //显示选中的多选框个数
+    document.getElementById("btn").onclick = function () {
+      showCount()
+    };
+
+
+    var showCount = function () {
+        //js
+//        var checkedArr = [],
+//                checkboxes = document.getElementsByName("check");
+//        for(var i=0;i<checkboxes.length;i++) {
+//            if(checkboxes[i].checked) {
+//                checkedArr.push(checkboxes[i]);
+//            }
+//        }
+//        alert(checkedArr.length);
+
+        //jQuery
+        alert($("input:checked").length);
+    };
+
+
+
+</script>
+</html>

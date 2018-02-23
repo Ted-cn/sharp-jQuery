@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>DOM对象转换成jQuery对象</title>
+</head>
+<body>
+<input type="checkbox" id="cr">
+<script type="text/javascript" src="../../../resource/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    /**
+     * 对于一个DOM对象，只需要把它用$()包起来，就可以获得一个jQuery对象
+     */
+    var cr = document.getElementById("cr");
+    var $cr = $(cr);
+</script>
+</body>
+</html>

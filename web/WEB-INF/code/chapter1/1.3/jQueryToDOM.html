@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery对象转换成DOM对象</title>
+</head>
+<body>
+<input type="checkbox" id="cr"/>
+<script type="text/javascript" src="../../../resource/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    /**
+     * 1.jQuery对象是一个数组对象，可以通过相应的[index]来获得DOM对象
+     */
+    //需要注意的是，$("#cr")永远是jQuery对象，即使页面上并没有这个元素
+    //所以判断该对象是否存在时，应该使用$("#cr").length或转化成DOM对象来判断
+    var $cr = $("#cr");
+    var cr = $cr[0];
+    alert(cr.checked);
+
+    /**
+     * 2.通过get(index)来获得DOM对象
+     */
+    var $cr = $("#cr");
+    var cr = $cr.get(0);
+    alert(cr.checked);
+</script>
+</body>
+</html>

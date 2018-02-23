@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>dom</title>
+</head>
+<body>
+<p title="选择你最喜欢的水果。">你最喜欢的水果是？</p>
+<ul>
+    <li title="苹果">苹果</li>
+    <li title="橘子">橘子</li>
+    <li title="菠萝">菠萝</li>
+</ul>
+<script type="text/javascript" src="../../../resource/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    var $li = $("ul li:eq(1)");  //第2个li
+    var li_txt = $li.text(); //第2个li的文本
+    //alert(li_txt);
+
+    var $para = $("p");
+    var p_txt = $para.attr("title");
+    //alert(p_txt);
+
+    var $li_1 = $("<li></li>");
+    var $li_2 = $("<li></li>");
+    $("ul").append($li_1);
+    $("ul").append($li_2);
+
+</script>
+</body>
+</html>

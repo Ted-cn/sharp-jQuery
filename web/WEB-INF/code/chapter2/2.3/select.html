@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择过滤器</title>
+</head>
+<body>
+<script type="text/javascript">
+    /**
+     * 规则与CSS中的伪类选择器语法相同
+     * 即以一个(:)开头，有如下几种
+     */
+    //1.基本过滤
+    /**
+     * :first
+     * :last
+     * :not(selector)
+     * :even 偶数
+     * :odd 奇数
+     * :eq(index) 等于(equal)index
+     * :gt(index) 大于(greater than)index
+     * :lt(index) 小于(less than)index
+     * :header 所有标题
+     * :animated 正在执行动画的所有元素
+     */
+    //2.内容过滤
+    /**
+     * :contains(text) 含有文本内容为“text”的元素
+     * :empty 空元素
+     * :has(selector) 含有所匹配的元素的元素
+     * :parent 含有子元素或者文本的元素
+     */
+    //3.可见性过滤
+    /**
+     * :hidden 选取所有不可见的元素
+     * :visible 所有可见的元素
+     */
+    //4.属性过滤
+    /**
+     * [attribute] 有此属性的元素
+     * [attribute=value] 有此属性且值为“value”的元素
+     * [attribute!=value] 有此属性且值不为“value”的元素
+     * [attribute^=value] 属性的值以“value”开始的元素
+     * [attribute$=value] 属性的值以“value”结束的元素
+     * [attribute*=value] 属性的值含有“value”的元素
+     * [selector1][selector2][selectorN] 满足多个条件
+     */
+    //5.子元素过滤
+    /**
+     * :nth-child(index/even/odd/equation)
+     * :first-child
+     * :last-child
+     * :only-chlid 唯一元素
+     */
+    //6.表单对象属性过滤
+    /**
+     * :enabled 可用的
+     * :disabled 不可用的
+     * :checked 被选中的
+     * :selected 被选中的
+     */
+</script>
+</body>
+</html>

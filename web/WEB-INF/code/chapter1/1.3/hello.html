@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>第一个jQuery程序</title>
+</head>
+<body>
+<script type="text/javascript" src="../../../resource/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    //可以简写成$(function() {});
+    /**
+     * 关于document.onload与$(document).ready()的区别：
+     * 1.前者必须等待网页中所有内容（包括图片）全部加载完成后才能执行；不能同时编写多个（只执行最后一个）
+     * 2.后者网页中所有DOM元素绘制完成后即可执行（可以同时编写多个）
+     */
+    $(document).ready(function () {
+        alert("hello world!")
+    });
+</script>
+</body>
+</html>

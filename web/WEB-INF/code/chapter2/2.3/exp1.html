@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>测试1</p>
+<p>测试2</p>
+<script type="text/javascript" src="../../../resource/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    //给p元素绑定点击事件
+    //js
+    var ps = document.getElementsByTagName("p");
+    var p;
+    for(i in ps) {
+        p = ps[i];
+        p.onclick = function () {
+            alert("click");
+        }
+    }
+
+    //jQuery
+    $("p").click(function () {
+        alert("click");
+    });
+</script>
+</body>
+</html>
